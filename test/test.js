@@ -13,7 +13,7 @@ const {
 chai.use(chaiHttp);
 chai.should();
 
-describe('Unit Test mile-test-api', () =>  {
+describe('Unit Test meli-test-api', () =>  {
 
     beforeEach(() => {
 

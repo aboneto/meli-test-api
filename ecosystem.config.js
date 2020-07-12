@@ -1,6 +1,6 @@
 module.exports = {
   apps : [{
-    name: 'mile-test-api',
+    name: 'meli-test-api',
     script: "index.js",
     instances: "max",
     "ignore_watch" : ["node_modules"],

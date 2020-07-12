@@ -1,4 +1,4 @@
-# mile-test-api
+# meli-test-api
 API for el Practical Test - Frontend for Mercado Libre Chile
 
 #### Install
