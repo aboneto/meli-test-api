@@ -25,6 +25,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
-const serverApp = app.listen(server.port);
+const serverApp = app.listen(server.port, () => console.log(`App listening at http://localhost:${server.port}`));
 module.exports = serverApp;
 module.exports.stop = serverApp.close;
