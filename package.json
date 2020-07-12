@@ -1,0 +1,44 @@
+{
+  "name": "mile-test-api",
+  "version": "1.0.0",
+  "description": "Test Práctico - Frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "pm2": "pm2-runtime ecosystem.config.js --env production",
+    "test": "env NODE_ENV=test mocha --reporter spec --timeout 25000"
+  },
+  "mocha": {},
+  "nyc": {
+    "reporter": "lcov"
+  },
+  "author": "Antonio Neto <antonio.abon@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.1.2",
+    "nock": "^12.0.3",
+    "nodemon": "^2.0.4",
+    "nyc": "^15.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-json": "^2.0.2",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "module-alias": "^2.2.2",
+    "services": "0.0.3"
+  },
+  "_moduleAliases": {
+    "root": ".",
+    "config": "config",
+    "controllers": "controllers",
+    "middleware": "middleware",
+    "services": "services"
+  }
+}
